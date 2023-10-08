@@ -1,0 +1,29 @@
+div.hmenu{
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bolder;
+    margin: 5px;
+}
+div.hmenu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #14bfee;
+}
+div.hmenu li{
+    float: left;
+    margin-left: 5px;
+}
+div.hmenu li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 5px 0;
+    text-decoration: none;
+    background-color: #14bfee;
+}
+div.hmenu li a:hover{
+    background-color: #0099cb;
+    border-radius: 7px;
+}

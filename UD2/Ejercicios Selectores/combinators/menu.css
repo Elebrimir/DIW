@@ -1,0 +1,57 @@
+body { /*font-size/line-height*/
+  font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+input {
+    display: none; /*it is not part of the layout*/
+}
+label,
+ul { /*round borders for label and li*/
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+}
+label {
+  color: #0087cc;
+  cursor: pointer;
+  display: inline-block; /* no clear is needed after it */
+  font-size: 18px;
+  padding: 5px 9px;
+  transition: all .15s ease; /* CSS3 it takes 0.15 secs to change anything (color when hover) */
+}
+label:hover {
+  color: #ff7b29;
+}
+input:checked + label { /* label that is adjacent sibling of the input:checked element */ 
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15); /* CSS3 inner-shadow blur x-shadow y-shadow color */ 
+  color: #9799a7;
+}
+nav {
+  max-height: 0; /* The maximum height is 0 so we do not see it by default */
+  overflow: hidden;
+  transition: all .15s ease; /* CSS3 When we change anything it takes 0.15 secs. Ease is the transition curve */
+}
+input:checked ~ nav { /* nav that are general sibling of input:checked */
+  max-height: 500px; /* we change height --> transition */
+}
+ul {
+  list-style: none;
+  margin: 8px 0 0 0; /*top-margin*/
+  width: 100px;
+}
+li {
+  border-bottom: 1px solid #cecfd5;
+}
+li:last-child {
+  border-bottom: 0;
+}
+a {
+  color: #0087cc;
+  display: block; /**
+                   * each link is displayed below the other but as they are inside ul (block elements) nothing happens.
+                   * It gives a little top and bottom margin
+                   **/
+  padding: 6px 12px;
+  text-decoration: none; /* no link deco */
+}
+a:hover {
+  color: #ff7b29;
+}

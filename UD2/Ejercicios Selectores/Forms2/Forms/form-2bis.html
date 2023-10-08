@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <!--some client-side data checking-->
+<html>
+    <head>
+        <meta http-equiv="refresh" content="30" />
+        <meta charset="utf-8" />
+        <title>form-2</title>
+        <link rel="shortcut icon" href="HTML5-Badge.ico" />
+        <link rel="stylesheet" href="form-2.css" />
+    </head>
+    <body>
+        <div class="form-style-2">
+            <div class="form-style-2-heading">Provide your information</div>
+            <form action="" method="post">
+                <label for="field1"><span>Name <span class="required">*</span></span>
+                    <input type="text" class="input-field" name="field1" value="" required="required" />
+                </label>
+                <label for="field2"><span>Email <span class="required">*</span></span>
+                    <input type="text" class="input-field" name="field2" value="" required="required" />
+                </label>
+                <label><span>Telephone</span>
+                    <input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" pattern="[0-9]{3}" />
+                - <input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4" pattern="[0-9]{3}" />
+                - <input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10" pattern="[0-9]{3}" />
+                </label>
+                <label for="field4"><span>Regarding</span>
+                    <select name="field4" class="select-field">
+                        <option value="General Question">General</option>
+                        <option value="Advertise">Advertisement</option>
+                        <option value="Partnership">Partnership</option>
+                    </select>
+                </label>
+                <label for="field5"><span>Message <span class="required">*</span></span>
+                    <textarea name="field5" class="textarea-field" required="required" ></textarea>
+                </label>
+                <label><span>&nbsp;</span>
+                    <input type="submit" value="Submit" />
+                </label>
+            </form>
+        </div>       
+    </body>
+</html>

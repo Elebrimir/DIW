@@ -1,0 +1,7 @@
+a:after {
+color: #9799a7;
+content: " (" attr(href) ")"; /* takes the value of the attribute href */
+font-size: 11px;
+}
+
+

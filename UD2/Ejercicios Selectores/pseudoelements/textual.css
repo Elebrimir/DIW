@@ -1,0 +1,18 @@
+.alpha:first-letter, .bravo:first-line{
+    color: #ff7b29;
+    font-size: 18px;
+}
+/* *
+ * only one pseudo-element is allowed pero element
+ * at a given time
+ * */
+/*
+.nope:first-letter{
+    color: #ff7b29;
+    font-size: 18px;
+}
+.nope:first-line{
+    color: #ff7b29;
+    font-size: 18px;
+}
+*/

@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.all_together{
+    width:90%;
+    margin:auto;
+}
+div.header{
+    background-color: #0099cb;
+    text-align: center;
+}
+#header_image{
+    box-shadow: 2px 2px 5px black;
+    max-width: 100%;
+    height: auto;
+}
+div.hmenu{
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bolder;
+}
+div.hmenu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #14bfee;
+}
+div.hmenu li{
+    float: left;
+    margin-left: 5px;
+}
+div.hmenu li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    margin: 5px 0;
+    text-decoration: none;
+    background-color: #14bfee;
+}
+div.hmenu li a:hover{
+    background-color: #0099cb;
+    border-radius: 7px;
+}
+
+div.left_aside{
+    width: 20%;
+    background-color: rgba(0, 0, 255, 0.5);
+    margin-top: 20px;
+}
+div.vmenu1, div.vmenu2 {
+    border: 4px groove navy;
+}
+div.vmenu1{
+    margin-bottom: 20px;
+}
+div.vmenu1 ul, div.vmenu2 ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+div.vmenu1 li a, div.vmenu2 li a{
+    display: block;
+    color: #000;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    font-family: fantasy;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+div.vmenu1 li a:hover{
+    background-color: rgb(255,255,255);
+    color: white;
+    text-shadow: 0 0 5px navy ,0 0 6px black;
+}
+div.vmenu2 li a:hover{
+    background-color: rgb(255,255,255);
+    color: white;
+    text-shadow: 0 0 5px navy, 0 0 6px red;
+}
