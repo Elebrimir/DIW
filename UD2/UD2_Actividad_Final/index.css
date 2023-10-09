@@ -1,0 +1,37 @@
+/*-------Básico---------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*-------Layout---------------------------------------------------------*/
+#contenedor {
+    width: 100%;
+    max-width: 1080px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  #titulo_pagina, #navegacion, #contenido, #principal, #primario, #secundario, #terciario, #pie {
+    border: 1px solid #777;
+  }
+
+  #titulo_pagina { clear: both; }
+  #navegacion { clear: both; }
+  #contenido { float: left;width: 90%; padding: 1em;}
+  #principal { float: left; width: 90%; padding: 1em;}
+  #primario { float: left; width: 30%; }
+  #secundario { float: right; width: 30%; }
+  #terciario { float: right; width: 30%; }
+  #pie { clear: both; }
+
+  /*-- Cabecera --------------------------------------------------------*/
+
+
+  /*-- Menu ------------------------------------------------------------*/
+
+
+  /*-- Principal -------------------------------------------------------*/
+
+
+  /*-- Pie --------- ---------------------------------------------------*/
