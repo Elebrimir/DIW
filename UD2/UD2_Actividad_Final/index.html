@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="HTML" />
-  <meta name="description" content="Ejercicio UD1" />
-  <meta name="author" content="Pablo Cortes Bravo" />
-  <link rel="stylesheet" type="text/css" href="index.css" title="style" />
-  <title>BicisVal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML">
+  <meta name="description" content="Ejercicio UD1">
+  <meta name="author" content="Pablo Cortes Bravo">
+  <link type="text/css" href="index.css" title="style" rel="stylesheet">
+  <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+  <title>BicisVal / Página Principal</title>
 </head>
 
 <body>
@@ -23,18 +24,19 @@
     <nav>
       <!--Enlaces Página-->
       <div id="enlaces">
-        <button type="button"><a href="venta.html">Ventas</a></button>
-        <button type="button"><a href="taller.html">Reparaciones</a></button>
-        <button type="button"><a href="alquiler.html">Alquiler</a></button>
+        <button class="button" id="buttonActive"><a class="link" id="linksActive" href="index.html">Inicio</a></button>
+        <button class="button"><a class="link" href="venta.html">Ventas</a></button>
+        <button class="button"><a class="link" href="taller.html">Reparaciones</a></button>
+        <button class="button"><a class="link" href="alquiler.html">Alquiler</a></button>
       </div>
       <!-- / Enlaces página-->
       <!--Botones Idiomas-->
       <div id="idiomas">
         <button type="button">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Senyera_Valenciana_simplificada_2x3.svg" height="18" alt="Valencià" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Senyera_Valenciana_simplificada_2x3.svg" alt="Valencià" height="18">
         </button>
         <button type="button">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg" height="18" alt="Castellano" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg" alt="Castellano" height="18">
         </button>
       </div>
       <!-- /Botones idiomas-->
@@ -43,37 +45,43 @@
 
     <!-- Contenido-->
     <div id="contenido">
-
       <!--Sección principal-->
-      <section id="principal">
-        <article id="primario">
-          <span>Bicicleta 1</span>
-          <img src="./imagenes/bike1.jpeg" alt="imagen_genérica" />
-          <p>Descripción</p>
+      <div class="gallery" id="principal">
+        <article class="objetos">
+          <span class="titulObjetos">Bicicleta 1</span>
+          <img class="imagObjetos" src="./imagenes/bike1.jpeg" alt="imagen_genérica">
+          <p class="textObjetos">Descripción</p>
         </article>
-        <article id="secundario">
-          <span>Bicicleta 2</span>
-          <img src="./imagenes/bike2.jpeg" alt="imagen_genérica" />
-          <p>Descripción</p>
+        <article class="objetos">
+          <span class="titulObjetos">Bicicleta 2</span>
+          <img class="imagObjetos" src="./imagenes/bike2.jpeg" alt="imagen_genérica">
+          <p class="textObjetos">Descripción</p>
         </article>
-        <article id="terciario">
-          <span>Bicicleta 3</span>
-          <img src="./imagenes/bike3.jpeg" alt="imagen_genérica" />
-          <p>Descripción</p>
+        <article class="objetos">
+          <span class="titulObjetos">Bicicleta 3</span>
+          <img class="imagObjetos" src="./imagenes/bike3.jpeg" alt="imagen_genérica">
+          <p class="textObjetos">Descripción</p>
         </article>
-      </section>
-      <!-- Seccion principal-->
-
-    </div>
-    <!--/Contenido-->
-
-    <!--Pie-->
-    <footer id="pie">
+        <!-- Seccion principal-->
+      </div>
+      <!--/Contenido-->
+    </div><!--Pie-->
+    <footer>
       <div id="contacto">
-        <p id="titulo_contacto">Contacto:</p>
-        <p id="detalles_contacto">
-          <span> <em>Dirección:</em> Calle Moto,10 </span>
-          <span> <em>Teléfono:</em> 699 888 777 </span>
+        <div id="lema">
+          <p class="textFooter">BicisVal <br> Donde van los verdaderos ciclistas</p>
+        </div>
+        <div id="siguenos">
+          <p class="textFooter">Siguenos:</p>
+          <button>Instagram</button>
+          <button>Facebook</button>
+          <button>X</button>
+        </div>
+      </div>
+      <div id="datosContacto">
+        <p class="textFooter" id="detalles_contacto">
+          <span> @ 2023 BicisVal. Tienda Oficial Trek, España. Todos los derechos reservados <br>Calle Moto,10 - Cocentaina</span>
+          <span id="telefono"> <em>Llamanos:</em> 699 888 777 </span>
         </p>
       </div>
     </footer>
