@@ -14,8 +14,11 @@ header {
 header h1 {
   float: left;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  color: whitesmoke;
+  font-family: Arial, sans-serif, serif;
+  font-size: 8vw;
+  background: -webkit-linear-gradient(whitesmoke,darkred);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding: 0.5em;
   margin: auto;
 }
@@ -42,11 +45,11 @@ nav {
 
 #idiomas {
   display: flex;
-  padding: 2px;
-  width: auto;
+  padding: 0;
+  width: max-content;
+  height: 50px;
   float: left;
-  margin: auto;
-
+  margin: 0;
 }
 
 #idiomas button {
@@ -124,13 +127,13 @@ nav {
   position: relative;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1150px) {
   #principal {
     grid-template-columns: auto auto;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   #principal {
     grid-template-columns: auto;
   }
