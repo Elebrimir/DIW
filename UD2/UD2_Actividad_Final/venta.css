@@ -1,0 +1,157 @@
+.cabecera {
+  grid-area: header;
+  margin: 50px;
+}
+.menuNavegacion {
+  grid-area: menu;
+  background-image: linear-gradient(black, dimgrey);
+}
+.contenido {
+  grid-area: main;
+}
+.pie {
+  grid-area: footer;
+}
+
+.contenedorPrincipal {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "menu main main main"
+    "footer footer footer footer";
+  gap: 0px;
+  background-image: linear-gradient(black, dimgrey);
+  padding: 0;
+  margin: 0;
+}
+
+.cabecera div h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  color: whitesmoke;
+}
+
+#enlaces {
+  background-color: dimgray;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+}
+
+#menu_principal a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#enlaces:hover{
+    background-color: whitesmoke;
+}
+
+#enlaces:hover ul a{
+    color: black;
+}
+
+.contenido {
+  background-color: darkslategray;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 60px;
+  row-gap: 30px;
+  padding: 2rem;
+  margin: 0;
+}
+
+@media (max-width: 1550px) {
+  .contenido {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .contenido {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .contenido {
+    grid-template-columns: auto;
+  }
+}
+
+.elementos {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px black;
+  background-color: whitesmoke;
+}
+
+.elementos h3 {
+  margin: 3px;
+  padding: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.elementos img {
+  margin: auto;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px dotted dimgrey;
+  padding: 0;
+}
+
+.elementos span {
+  margin: 5px;
+  padding: 1rem;
+  text-align: center;
+  color: darkslategray;
+}
+
+footer {
+  margin: 0;
+  background-image: linear-gradient(dimgrey, black);
+  display: grid;
+}
+
+.textFooter {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+#lema {
+  float: left;
+  margin-left: 50px;
+}
+
+#siguenos {
+  float: right;
+  margin-right: 50px;
+}
+
+#siguenos p {
+  text-align: center;
+}
+
+#datosContacto {
+  margin-top: 10px;
+}
+
+#detalles_contacto {
+  padding: 5px;
+  border-top: 2px solid whitesmoke;
+  color: blanchedalmond;
+  margin-top: 10px;
+}
