@@ -1,46 +1,48 @@
 body {
-  background-color: rgb(0, 0, 0);
+  max-width: 1280px;
+  margin: auto;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 header {
-  background-image: linear-gradient(rgba(47,79,79,0),rgba(47,79,79,1));
-  margin: 0;
-  padding: 0.2em;
-  grid-auto-columns: 500px auto;
-  display: flex;
-  border: 3px solid black;
-}
-
-header h1 {
-  float: left;
-  text-align: center;
-  font-family: Arial, sans-serif, serif;
-  font-size: 8vw;
-  background: -webkit-linear-gradient(whitesmoke,darkred);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 0.5em;
+  background-image: url(./imagenes/Background/IAFondo.jpeg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: antiquewhite;
+  background-blend-mode: darken;
   margin: auto;
+  padding: 0;
 }
 
 header div img {
-  margin-top: 10px;
-  margin-bottom: 40px;
-  margin-right: 40px;
-  float: right;
-  width: 40vw;
+  margin: 5vw;
+  margin-top: 10vw;
+  margin-left: 2vw;
+  width: 15vw;
   height: auto;
   padding: 0;
-  border: 1px solid;
+  border: none;
   box-shadow: 10px 10px 5px black;
+  border-radius: 25px;
+}
+
+.buttom a {
+  margin: auto;
 }
 
 nav {
+  width: 100%;
+  max-width: inherit;
+  overflow: hidden;
+  position: fixed;
   display: flex;
-  background-color: dimgrey;
+  background-color: darkred;
   margin: 0;
-  padding: 4px;
-  height: auto;;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
 }
 
 #idiomas {
@@ -49,55 +51,57 @@ nav {
   width: max-content;
   height: 50px;
   float: left;
-  margin: 0;
+  margin: auto;
+  margin-right: 2vw;
 }
 
 #idiomas button {
-
-  margin: 4px;
-  background-color: dimgrey;
-  border:none;
+  margin: auto;
+  background-color: darkred;
+  border: none;
 }
 
-#idiomas button:hover{
-  background-color: darkslategray;
+#idiomas button:hover {
+  background-color: whitesmoke;
 }
 
 #enlaces {
   display: flex;
   width: 100%;
-  float: left;
-  margin: 3px;
+  position: relative;
+  margin: auto;
   padding: 0;
 }
 
 #enlaces button {
   float: left;
   padding: 1%;
-  background-color: darkred;
+  background-color: grey;
   border: none;
-  margin: 3px;
+  margin: 7px;
   box-shadow: 4px 4px 3px;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 #enlaces .button:hover {
   background-color: whitesmoke;
+  cursor: pointer;
+  scale: 1.2;
 }
 
-#enlaces button:hover .link{
-  color:black;
+#enlaces button:hover .link {
+  color: black;
 }
 
 #enlaces #buttonActive {
-  background-color: lightgrey;
+  background-color: whitesmoke;
 }
 
 .link {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
-  color: whitesmoke;
+  color: black;
   text-decoration: none;
 }
 
@@ -109,76 +113,88 @@ nav {
   text-decoration: none;
 }
 
+.separador {
+  height: 250px;
+  background-color: whitesmoke;
+
+}
+
+.separador h1{
+  font-family: 'Times New Roman', Times, serif;
+  color: darkred;
+  align-self: center;
+  text-align: center;
+  padding: 5%;
+  margin: 0;
+}
+
+#contenedor{
+  margin: 0;
+}
+
 #contenido {
   margin: 0;
-  background-color: darkslategrey;
-  border: 3px solid black;
+  background-color: whitesmoke;
+  border: none;
+  text-align: center;
+}
+
+.gallery{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #principal {
   display: inline-grid;
   grid-template-columns: auto auto auto;
-  column-gap: 50px;
-  row-gap: 30px;
-  padding: 20px;
-  position: relative;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  margin: 0;
+  max-width: inherit;
 }
 
-@media (max-width:1150px) {
+.objetos {
+  background-color: whitesmoke;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.titulObjetos {
+  font-size: 1rem;
+  color: brown;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  padding: 5%;
+
+}
+
+.imagObjetos {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+@media (max-width: 1150px) {
   #principal {
     grid-template-columns: auto auto;
+    align-items: center;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 980px) {
   #principal {
     grid-template-columns: auto;
   }
 }
 
-.objetos {
-  background-color: whitesmoke;
-  height: auto;
-  width: 250px;
-  padding: 0.4em;
-  margin: 1em;
-  border: 1px solid black;
-  border-radius: 5%;
-  box-shadow: 10px 10px 5px black;
-  position: relative;
-}
-
-.titulObjetos {
-  display: block;
-  font-size: 1rem;
-  color: brown;
-  font-weight: bold;
-  text-align: center;
-  height: 10%;
-  margin-bottom: 1.5vw;
-}
-
-.imagObjetos {
-  display: block;
-  width: 90%;
-  height: auto;
-  margin: auto;
-}
-
-.textObjetos {
-  display: block;
-  height: auto;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 footer {
   margin: 0;
-  background-color: dimgrey;
-  background-image: linear-gradient(dimgrey, black);
+  background-color: darkred;
   display: grid;
 }
 
@@ -191,26 +207,39 @@ footer {
 }
 
 #lema {
+  max-width: 50%;
   float: left;
   margin-left: 50px;
 }
 
 #siguenos {
+  max-width: 50%;
   float: right;
   margin-right: 50px;
 }
 
-#siguenos p{
+#siguenos p {
   text-align: center;
 }
 
+.enlacesRRSS{
+  background-color: transparent;
+  border: none;
+}
+
+.enlacesRRSS:hover{
+  cursor: pointer;
+  scale: 1.1;
+}
+
 #datosContacto {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #detalles_contacto {
   padding: 5px;
   border-top: 2px solid whitesmoke;
-  color: blanchedalmond;
-  margin-top: 10px;
+  color: whitesmoke;
+  margin-top: 10%;
+  text-align: center;
 }
