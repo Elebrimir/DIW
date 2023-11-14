@@ -9,16 +9,12 @@ body {
   grid-area: header;
   margin: 0;
   padding: 0;
-  background-image: url(./imagenes/IAVentas.jpeg);
+  background-image: url(./imagenes/IAAlquiler.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: darkgrey;
 }
 
-.menuNavegacion {
-  grid-area: menu;
-  background-color: antiquewhite;
-}
 .contenido {
   grid-area: main;
 }
@@ -26,15 +22,49 @@ body {
   grid-area: footer;
 }
 
-.contenedorPrincipal {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "menu main main main"
-    "footer footer footer footer";
-  gap: 0px;
-  padding: 0;
+nav {
+  width: 100%;
+  max-width: inherit;
+  overflow: hidden;
+  display: flex;
+  background-color: darkred;
   margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+}
+
+#enlaces {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 0;
+}
+
+#enlaces a {
+  width: 150px;
+  float: left;
+  padding: 1%;
+  background-color: grey;
+  border: none;
+  margin: auto;
+  box-shadow: 4px 4px 3px black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#enlaces a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#enlaces a:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+  scale: 1.2;
+  color: #333;
 }
 
 .cabecera div {
@@ -62,11 +92,6 @@ body {
   color: whitesmoke;
 }
 
-#enlaces:hover {
-  background-color: whitesmoke;
-  cursor: pointer;
-}
-
 #enlaces:hover ul a {
   color: black;
 }
@@ -92,6 +117,12 @@ body {
   .contenido {
     grid-template-columns: auto;
   }
+}
+
+#presentacion{
+
+    background-color: whitesmoke;
+    padding: 5%;
 }
 
 .elementos {

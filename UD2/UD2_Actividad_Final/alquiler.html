@@ -6,13 +6,14 @@
     <meta name="keywords" content="HTML" />
     <meta name="description" content="Ejercicio UD1" />
     <meta name="author" content="Pablo Cortes Bravo" />
-    <title>Alquiler BicisVal</title>
+    <link rel="stylesheet" href="alquiler.css" />
+    <title>Ventas BicisVal</title>
   </head>
 
   <body>
     <!--Cabecera-->
-    <header>
-      <div id="titulo_pagina">
+    <header class="cabecera">
+      <div>
         <h1>Alquiler</h1>
       </div>
     </header>
@@ -22,37 +23,124 @@
     <nav>
       <!--Enlaces Página-->
       <div id="enlaces">
-        <ul id="menu_principal">
-          <a href="index.html">Inicio</a>
-        </ul>
+        <a href="index.html" id="menu_principal"> Inicio </a>
       </div>
       <!-- /Enlaces Pagina -->
     </nav>
+    <!-- /Enlaces Pagina -->
     <!-- /Menu Principal-->
 
     <!--Contenido-->
-    <div id="contenido">
-      <section id="principal">
-        <article>
-          <h3>Bicicleta 2</h3>
-          <span>Precio: 20€/dia</span>
-          <img src="image" alt="imagen_genérica">
-        </article>
-      </section>
+
+    <div id="presentacion">
+      <h1>Bienvenido a nuestra Sección de Alquiler de Bicicletas</h1>
+      <p>
+        Explora tu ciudad de una manera única y emocionante con nuestro servicio
+        de alquiler de bicicletas. En nuestro esfuerzo por promover un estilo de
+        vida saludable y sostenible, ofrecemos una amplia variedad de bicicletas
+        para adaptarse a tus necesidades y preferencias.
+      </p>
+
+      <p>
+        ¿Estás buscando una bicicleta para un paseo relajado por el parque, una
+        bicicleta de montaña para explorar senderos emocionantes o una bicicleta
+        urbana para desplazarte por la ciudad? ¡Estamos aquí para ayudarte!
+      </p>
+
+      <p>
+        Nuestras bicicletas son de alta calidad y se mantienen en condiciones
+        óptimas para garantizar una experiencia de conducción segura y
+        placentera. Ya sea que seas un ciclista experimentado o simplemente
+        quieras probar algo nuevo, tenemos la bicicleta perfecta para ti.
+      </p>
+
+      <p>
+        Este es solo un ejemplo de nuestro catálogo de alquiler. Si te decides a
+        alquilar una bicicleta, simplemente contacta con nosotros y estaremos
+        encantados de enviarte nuestro catalogo y la disponibilidad de alquiler,
+        una vez decidas cual estaremos encantados de prepararla para que la
+        recojas. ¡Disfruta de la libertad de la bicicleta sin la responsabilidad
+        de la propiedad!
+      </p>
+
+      <p>
+        Gracias por elegir nuestro servicio de alquiler. ¡Esperamos que
+        disfrutes de tu viaje y que tu experiencia en bicicleta sea inolvidable!
+      </p>
+    </div>
+
+    <div class="contenido">
+      <article class="elementos">
+        <h3>Snake</h3>
+        <img src="./imagenes/MountainBike/IAMbici1.jpeg" alt="Snake" />
+        <span>Precio: 45€ / dia</span>
+      </article>
+      <article class="elementos">
+        <h3>Dreamer</h3>
+        <img src="./imagenes/MountainBike/IAMbici2.jpeg" alt="Dreamer" />
+        <span>Precio: 55€ / dia</span>
+      </article>
+      <article class="elementos">
+        <h3>Reclaimer</h3>
+        <img src="./imagenes/MountainBike/IAMbici3.jpeg" alt="Reclaimer" />
+        <span>Precio: 65€ / dia</span>
+      </article>
+      <article class="elementos">
+        <h3>Curiosity</h3>
+        <img src="./imagenes/RoadBike/IAbici4.jpeg" alt="Curiosity" />
+        <span>Precio: 45€ / dia</span>
+      </article>
+      <article class="elementos">
+        <h3>Black Panther</h3>
+        <img src="./imagenes/RoadBike/IAbici5.jpeg" alt="Black Panther" />
+        <span>Precio: 55€ / dia</span>
+      </article>
+      <article class="elementos">
+        <h3>Evolution</h3>
+        <img src="./imagenes/RoadBike/IAbici6.jpeg" alt="Evolution" />
+        <span>Precio: 65€ / dia</span>
+      </article>
     </div>
     <!-- /Contenido -->
 
-
     <!--Pie-->
-    <footer id="pie">
-        <div id="contacto">
-          <p id="titulo_contacto">Contacto:</p>
-          <p id="detalles_contacto">
-            <span> <em>Dirección:</em> Calle Moto,10 </span>
-            <span> <em>Teléfono:</em> 699 888 777 </span>
+    <footer>
+      <div id="contacto">
+        <div id="lema">
+          <p class="textFooter">
+            BicisVal<br />"Pedalea hacia tu aventura con BicisVal: donde cada
+            ruta es una historia, y cada bicicleta es tu compañera de viaje."
           </p>
         </div>
-      </footer>
-      <!--/Pie-->
+        <div id="siguenos">
+          <p class="textFooter">Siguenos:</p>
+          <button class="enlacesRRSS">
+            <img
+              src="./imagenes/Background/icons8-instagram(1).svg"
+              alt="Instagram"
+            />
+          </button>
+          <button class="enlacesRRSS">
+            <img
+              src="./imagenes/Background/icons8-facebook(1).svg"
+              alt="facebook"
+            />
+          </button>
+          <button class="enlacesRRSS">
+            <img src="./imagenes/Background/icons8-twitterx(1).svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div id="datosContacto">
+        <p class="textFooter" id="detalles_contacto">
+          <span>
+            @ 2023 BicisVal. Tienda Oficial, España. Todos los derechos
+            reservados <br />Calle Moto,10 - Cocentaina</span
+          >
+          <span id="telefono"> <em>Llamanos:</em> 699 888 777 </span>
+        </p>
+      </div>
+    </footer>
+    <!--/Pie-->
   </body>
 </html>

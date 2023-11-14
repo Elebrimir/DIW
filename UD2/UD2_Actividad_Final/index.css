@@ -16,9 +16,9 @@ header {
 }
 
 header div img {
-  margin: 5vw;
-  margin-top: 10vw;
-  margin-left: 2vw;
+  margin: 5%;
+  margin-top: 10%;
+  margin-left: 75%;
   width: 15vw;
   height: auto;
   padding: 0;
@@ -56,13 +56,14 @@ nav {
 }
 
 #idiomas button {
-  margin: auto;
+  margin: 1%;
   background-color: darkred;
   border: none;
 }
 
 #idiomas button:hover {
-  background-color: whitesmoke;
+  background-color: red;
+  cursor: pointer;
 }
 
 #enlaces {
@@ -116,11 +117,10 @@ nav {
 .separador {
   height: 250px;
   background-color: whitesmoke;
-
 }
 
-.separador h1{
-  font-family: 'Times New Roman', Times, serif;
+.separador h1 {
+  font-family: "Times New Roman", Times, serif;
   color: darkred;
   align-self: center;
   text-align: center;
@@ -128,7 +128,7 @@ nav {
   margin: 0;
 }
 
-#contenedor{
+#contenedor {
   margin: 0;
 }
 
@@ -139,7 +139,7 @@ nav {
   text-align: center;
 }
 
-.gallery{
+.gallery {
   display: flex;
   justify-content: center;
 }
@@ -170,7 +170,6 @@ nav {
   text-align: center;
   float: left;
   padding: 5%;
-
 }
 
 .imagObjetos {
@@ -222,12 +221,12 @@ footer {
   text-align: center;
 }
 
-.enlacesRRSS{
+.enlacesRRSS {
   background-color: transparent;
   border: none;
 }
 
-.enlacesRRSS:hover{
+.enlacesRRSS:hover {
   cursor: pointer;
   scale: 1.1;
 }

@@ -1,0 +1,202 @@
+body {
+  width: 1280px;
+  font-family: "Arial", sans-serif;
+  background-color: whitesmoke;
+  height: auto;
+  margin: auto;
+  padding: 0;
+}
+
+header {
+  background-color: darkgrey;
+  background-image: url(./imagenes/IAReparaciones.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 33vw;
+}
+
+#titulo_pagina {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4vw;
+  color: antiquewhite;
+  background-color: black;
+  opacity: 0.75;
+}
+
+#titulo_pagina h1 {
+margin: auto;
+}
+
+nav {
+  width: 100%;
+  max-width: inherit;
+  overflow: hidden;
+  display: flex;
+  background-color: darkred;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+}
+
+#enlaces {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 0;
+}
+
+#enlaces a {
+  width: 150px;
+  float: left;
+  padding: 1%;
+  background-color: grey;
+  border: none;
+  margin: auto;
+  box-shadow: 4px 4px 3px black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#enlaces a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#enlaces a:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+  scale: 1.2;
+  color: #333;
+}
+
+
+
+#contenido {
+  margin: auto;
+}
+
+#presentacion {
+  margin: 10%;
+}
+
+form {
+  margin: auto;
+  margin-bottom: 10%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+select {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+}
+
+textarea {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: #3498db;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  margin: 0;
+  background-color: darkred;
+  display: grid;
+}
+
+.textFooter {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+#lema {
+  max-width: 50%;
+  float: left;
+  margin-left: 50px;
+}
+
+#siguenos {
+  max-width: 50%;
+  float: right;
+  margin-right: 50px;
+}
+
+#siguenos p {
+  text-align: center;
+}
+
+.enlacesRRSS {
+  background-color: transparent;
+  border: none;
+}
+
+.enlacesRRSS:hover {
+  background-color: transparent;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+#datosContacto {
+  margin-top: 20px;
+}
+
+#detalles_contacto {
+  padding: 5px;
+  border-top: 2px solid whitesmoke;
+  color: whitesmoke;
+  margin-top: 10%;
+  text-align: center;
+}
