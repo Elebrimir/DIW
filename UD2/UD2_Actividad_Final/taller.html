@@ -1,138 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML" />
-    <meta name="description" content="Ejercicio UD1" />
-    <meta name="author" content="Pablo Cortes Bravo" />
-    <title>Taller BicisVal</title>
-    <link rel="stylesheet" href="./taller.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="HTML" />
+  <meta name="description" content="Ejercicio UD1" />
+  <meta name="author" content="Pablo Cortes Bravo" />
+  <title>Taller BicisVal</title>
+  <link rel="stylesheet" href="./taller.css" />
+</head>
 
-  <body>
-    <!--Cabecera-->
-    <header>
-      <div id="titulo_pagina">
-        <h1>Taller</h1>
-      </div>
-    </header>
-    <!--/Cabecera-->
-
-    <!-- Menu principal-->
-    <nav>
-      <!--Enlaces Página-->
-      <div id="enlaces">
-        <a href="index.html" id="menu_principal"> Inicio </a>
-      </div>
-      <!-- /Enlaces Pagina -->
-    </nav>
-    <!-- /Menu Principal-->
-
-    <!--Contenido-->
-    <div id="contenido">
-      <div id="presentacion">
-        <h1>Bienvenido a nuestro Servicio de Reparación de Bicicletas</h1>
-        <p>
-          En nuestro taller, nos apasiona mantener tu bicicleta en las mejores
-          condiciones. Ya sea una simple puesta a punto, una reparación
-          específica o una mejora personalizada, nuestro equipo de expertos está
-          aquí para ayudarte.
-        </p>
-
-        <p>
-          Nuestros mecánicos altamente capacitados y apasionados están listos
-          para abordar cualquier problema que pueda tener tu bicicleta.
-          Trabajamos con todo tipo de bicicletas, desde bicicletas de montaña
-          hasta bicicletas de carretera y bicicletas urbanas.
-        </p>
-
-        <p>
-          ¿Tu bicicleta necesita atención? No dudes en completar el formulario
-          de solicitud de reparación a continuación. Proporciónandonos algunos
-          detalles sobre tu bicicleta y la reparación que necesitas, y nos
-          pondremos en contacto contigo lo antes posible para discutir los
-          próximos pasos.
-        </p>
-
-        <p>
-          Gracias por confiar en nosotros con el cuidado de tu bicicleta.
-          ¡Esperamos tenerla de nuevo en perfecto estado y lista para rodar!
-        </p>
-      </div>
-      <section id="principal">
-        <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
-
-          <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" name="telefono" required />
-
-          <label for="correo">Correo Electrónico:</label>
-          <input type="email" id="correo" name="correo" required />
-
-          <label for="modelo">Modelo de Bicicleta:</label>
-          <input type="text" id="modelo" name="modelo" required />
-
-          <label for="descripcion">Descripción de la Reparación:</label>
-          <textarea
-            id="descripcion"
-            name="descripcion"
-            rows="4"
-            required
-          ></textarea>
-
-          <label for="urgencia">Nivel de Urgencia:</label>
-          <select id="urgencia" name="urgencia" required>
-            <option value="baja">Baja</option>
-            <option value="media">Media</option>
-            <option value="alta">Alta</option>
-          </select>
-
-          <button type="submit">Enviar Solicitud</button>
-        </form>
-      </section>
+<body>
+  <!--Cabecera-->
+  <header>
+    <div id="titulo_pagina">
+      <h1>Taller</h1>
     </div>
-    <!-- /Contenido -->
+  </header>
+  <!--/Cabecera-->
 
-    <!--Pie-->
-    <footer>
-      <div id="contacto">
-        <div id="lema">
-          <p class="textFooter">
-            BicisVal<br />"Pedalea hacia tu aventura con BicisVal: donde cada
-            ruta es una historia, y cada bicicleta es tu compañera de viaje."
-          </p>
-        </div>
-        <div id="siguenos">
-          <p class="textFooter">Siguenos:</p>
-          <button class="enlacesRRSS">
-            <img
-              src="./imagenes/Background/icons8-instagram(1).svg"
-              alt="Instagram"
-            />
-          </button>
-          <button class="enlacesRRSS">
-            <img
-              src="./imagenes/Background/icons8-facebook(1).svg"
-              alt="facebook"
-            />
-          </button>
-          <button class="enlacesRRSS">
-            <img src="./imagenes/Background/icons8-twitterx(1).svg" alt="" />
-          </button>
-        </div>
-      </div>
-      <div id="datosContacto">
-        <p class="textFooter" id="detalles_contacto">
-          <span>
-            @ 2023 BicisVal. Tienda Oficial, España. Todos los derechos
-            reservados <br />Calle Moto,10 - Cocentaina</span
-          >
-          <span id="telefono"> <em>Llamanos:</em> 699 888 777 </span>
+  <!-- Menu principal-->
+  <nav>
+    <!--Enlaces Página-->
+    <div id="enlaces">
+      <a href="index.html" id="inicio"> Inicio </a>
+      <a href="venta.html" id="ventas">Ventas</a>
+      <a href="taller.html" id="reparaciones">Reparaciones</a>
+      <a href="alquiler.html" id="alquiler">Alquiler</a>
+    </div>
+    <!-- /Enlaces Pagina -->
+  </nav>
+  <!-- /Menu Principal-->
+
+  <!--Contenido-->
+  <div id="contenido">
+    <div id="presentacion">
+      <h1>Bienvenido a nuestro Servicio de Reparación de Bicicletas</h1>
+      <p>
+        En nuestro taller, nos apasiona mantener tu bicicleta en las mejores
+        condiciones. Ya sea una simple puesta a punto, una reparación
+        específica o una mejora personalizada, nuestro equipo de expertos está
+        aquí para ayudarte.
+      </p>
+
+      <p>
+        Nuestros mecánicos altamente capacitados y apasionados están listos
+        para abordar cualquier problema que pueda tener tu bicicleta.
+        Trabajamos con todo tipo de bicicletas, desde bicicletas de montaña
+        hasta bicicletas de carretera y bicicletas urbanas.
+      </p>
+
+      <p>
+        ¿Tu bicicleta necesita atención? No dudes en completar el formulario
+        de solicitud de reparación a continuación. Proporciónandonos algunos
+        detalles sobre tu bicicleta y la reparación que necesitas, y nos
+        pondremos en contacto contigo lo antes posible para discutir los
+        próximos pasos.
+      </p>
+
+      <p>
+        Gracias por confiar en nosotros con el cuidado de tu bicicleta.
+        ¡Esperamos tenerla de nuevo en perfecto estado y lista para rodar!
+      </p>
+    </div>
+    <section id="principal">
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="modelo">Modelo de Bicicleta:</label>
+        <input type="text" id="modelo" name="modelo" required />
+
+        <label for="descripcion">Descripción de la Reparación:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+        <label for="urgencia">Nivel de Urgencia:</label>
+        <select id="urgencia" name="urgencia" required>
+          <option value="baja">Baja</option>
+          <option value="media">Media</option>
+          <option value="alta">Alta</option>
+        </select>
+
+        <button type="submit">Enviar Solicitud</button>
+      </form>
+    </section>
+  </div>
+  <!-- /Contenido -->
+
+  <!--Pie-->
+  <footer>
+    <div id="contacto">
+      <div id="lema">
+        <p class="textFooter">
+          BicisVal<br />"Pedalea hacia tu aventura con BicisVal: donde cada
+          ruta es una historia, y cada bicicleta es tu compañera de viaje."
         </p>
       </div>
-    </footer>
-    <!--/Pie-->
-  </body>
+      <div id="siguenos">
+        <p class="textFooter">Siguenos:</p>
+        <button class="enlacesRRSS">
+          <img src="./imagenes/Background/icons8-instagram(1).svg" alt="Instagram" />
+        </button>
+        <button class="enlacesRRSS">
+          <img src="./imagenes/Background/icons8-facebook(1).svg" alt="facebook" />
+        </button>
+        <button class="enlacesRRSS">
+          <img src="./imagenes/Background/icons8-twitterx(1).svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div id="datosContacto">
+      <p class="textFooter" id="detalles_contacto">
+        <span>
+          @ 2023 BicisVal. Tienda Oficial, España. Todos los derechos
+          reservados <br />Calle Moto,10 - Cocentaina</span>
+        <span id="telefono"> <em>Llamanos:</em> 699 888 777 </span>
+      </p>
+    </div>
+  </footer>
+  <!--/Pie-->
+</body>
 </html>

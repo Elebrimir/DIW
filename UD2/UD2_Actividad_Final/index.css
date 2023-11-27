@@ -23,7 +23,7 @@ header div img {
   height: auto;
   padding: 0;
   border: none;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: -10px 10px 5px 2px #333;
   border-radius: 25px;
 }
 
@@ -59,6 +59,7 @@ nav {
   margin: 1%;
   background-color: darkred;
   border: none;
+  border-radius: 5px;
 }
 
 #idiomas button:hover {
@@ -80,8 +81,8 @@ nav {
   background-color: grey;
   border: none;
   margin: 7px;
-  box-shadow: 4px 4px 3px;
-  border-radius: 5%;
+  box-shadow: -4px 4px 2px 1px #333;
+  border-radius: 6px;
 }
 
 #enlaces .button:hover {
@@ -115,7 +116,7 @@ nav {
 }
 
 .separador {
-  height: 250px;
+  height: 200px;
   background-color: whitesmoke;
 }
 
@@ -126,6 +127,7 @@ nav {
   text-align: center;
   padding: 5%;
   margin: 0;
+  border-bottom: 5px solid #333;
 }
 
 #contenedor {
@@ -176,6 +178,7 @@ nav {
   max-width: 100%;
   height: auto;
   margin: auto;
+  box-shadow: -10px 10px 8px 4px #333;
 }
 
 @media (max-width: 1150px) {
@@ -239,6 +242,6 @@ footer {
   padding: 5px;
   border-top: 2px solid whitesmoke;
   color: whitesmoke;
-  margin-top: 10%;
+  margin-top: 40px;
   text-align: center;
 }

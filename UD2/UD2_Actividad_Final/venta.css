@@ -17,13 +17,47 @@ body {
 
 .menuNavegacion {
   grid-area: menu;
-  background-color: antiquewhite;
+  background-color: darkred;
 }
 .contenido {
   grid-area: main;
 }
 .pie {
   grid-area: footer;
+}
+
+#menu_principal {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+#menu_principal a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  background-color: darkgray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 5px 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: -8px 8px 4px 2px black;
+}
+
+#menu_principal a:hover {
+  background-color: whitesmoke;
+  color: #333;
+}
+
+#enlaces {
+  background-color: darkred;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
 }
 
 .contenedorPrincipal {
@@ -48,27 +82,6 @@ body {
 
 .cabecera div h1 {
   margin: auto;
-}
-
-#enlaces {
-  background-color: darkred;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin: auto;
-}
-
-#menu_principal a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-#enlaces:hover {
-  background-color: whitesmoke;
-  cursor: pointer;
-}
-
-#enlaces:hover ul a {
-  color: black;
 }
 
 .contenido {
@@ -98,10 +111,10 @@ body {
   display: grid;
   grid-template-rows: auto auto auto;
   row-gap: 20px;
-  border: none;
+  border: 2px solid antiquewhite;
   border-radius: 15px;
   padding: 1rem;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: -8px 8px 4px 2px #333;
   background-color: whitesmoke;
 }
 
@@ -176,6 +189,6 @@ footer {
   padding: 5px;
   border-top: 2px solid whitesmoke;
   color: whitesmoke;
-  margin-top: 10%;
+  margin-top: 40px;
   text-align: center;
 }

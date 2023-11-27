@@ -37,7 +37,8 @@ nav {
 
 #enlaces {
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  width: auto;
   position: relative;
   margin: auto;
   padding: 0;
@@ -45,17 +46,16 @@ nav {
 
 #enlaces a {
   width: 150px;
+  height: 40px;
   float: left;
-  padding: 1%;
+  padding-top: 25px;
   background-color: grey;
   border: none;
   margin: auto;
-  box-shadow: 4px 4px 3px black;
+  margin-right: 20px;
+  box-shadow: -8px 8px 4px 2px black;
   border-radius: 5px;
   text-align: center;
-}
-
-#enlaces a {
   text-decoration: none;
   color: whitesmoke;
 }
@@ -119,10 +119,9 @@ nav {
   }
 }
 
-#presentacion{
-
-    background-color: whitesmoke;
-    padding: 5%;
+#presentacion {
+  background-color: whitesmoke;
+  padding: 5%;
 }
 
 .elementos {
@@ -207,6 +206,6 @@ footer {
   padding: 5px;
   border-top: 2px solid whitesmoke;
   color: whitesmoke;
-  margin-top: 10%;
+  margin-top: 40px;
   text-align: center;
 }
