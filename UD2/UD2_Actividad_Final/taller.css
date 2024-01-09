@@ -1,10 +1,11 @@
 body {
   width: 1280px;
-  font-family: "Arial", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   background-color: whitesmoke;
   height: auto;
   margin: auto;
   padding: 0;
+  color: #333;
 }
 
 header {
@@ -55,15 +56,15 @@ nav {
   height: 40px;
   float: left;
   padding-top: 25px;
-  background-color: grey;
+  background-color: gray;
   border: none;
   margin: auto;
   margin-right: 20px;
-  box-shadow: -8px 8px 4px 2px black;
+  box-shadow: -8px 8px 4px 2px #333;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  color: whitesmoke;
+  color: #333;
 }
 
 #enlaces a:hover {
@@ -79,6 +80,10 @@ nav {
 
 #presentacion {
   margin: 8%;
+}
+
+#presentacion h1 {
+  color: darkred;
 }
 
 form {
