@@ -7,12 +7,12 @@
   <meta name="description" content="Ejercicio UD1" />
   <meta name="author" content="Pablo Cortes Bravo" />
   <title>Taller BicisVal</title>
-  <link rel="stylesheet" href="./taller.css" />
+  <link rel="stylesheet" href="./bicisVal.css" />
 </head>
 
 <body>
   <!--Cabecera-->
-  <header>
+  <header id="header_taller">
     <div id="titulo_pagina">
       <h1>Taller</h1>
     </div>
@@ -20,9 +20,9 @@
   <!--/Cabecera-->
 
   <!-- Menu principal-->
-  <nav>
+  <nav id="nav_taller">
     <!--Enlaces Página-->
-    <div id="enlaces">
+    <div id="enlaces_taller">
       <a href="index.html" id="inicio"> Inicio </a>
       <a href="venta.html" id="ventas">Ventas</a>
       <a href="taller.html" id="reparaciones">Reparaciones</a>
@@ -33,7 +33,7 @@
   <!-- /Menu Principal-->
 
   <!--Contenido-->
-  <div id="contenido">
+  <div id="contenido_taller">
     <div id="presentacion">
       <h1>Bienvenido a nuestro Servicio de Reparación de Bicicletas</h1>
       <p>
@@ -63,7 +63,7 @@
         ¡Esperamos tenerla de nuevo en perfecto estado y lista para rodar!
       </p>
     </div>
-    <section id="principal">
+    <section id="principal_taller">
       <form>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
@@ -87,7 +87,7 @@
           <option value="alta">Alta</option>
         </select>
 
-        <button type="submit">Enviar Solicitud</button>
+        <button id="button_taller" type="submit">Enviar Solicitud</button>
       </form>
     </section>
   </div>

@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: rgb(255, 255, 255);
 }
+
 .cabecera {
   height: 30vw;
   grid-area: header;
@@ -53,7 +54,7 @@ body {
   color: #333;
 }
 
-#enlaces {
+#enlaces_ventas {
   background-color: darkred;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -84,7 +85,7 @@ body {
   margin: auto;
 }
 
-.contenido {
+.contenido_ventas {
   background-color: whitesmoke;
   font-size: 1.5rem;
   display: grid;
@@ -96,13 +97,13 @@ body {
 }
 
 @media (max-width: 1150px) {
-  .contenido {
+  .contenido_ventas {
     grid-template-columns: auto auto;
   }
 }
 
 @media (max-width: 980px) {
-  .contenido {
+  .contenido_ventas {
     grid-template-columns: auto;
   }
 }
