@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="HTML" />
-  <meta name="description" content="Ejercicio UD1" />
-  <meta name="author" content="Pablo Cortes Bravo" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML">
+  <meta name="description" content="Ejercicio UD1">
+  <meta name="author" content="Pablo Cortes Bravo">
   <title>Taller BicisVal</title>
-  <link rel="stylesheet" href="./bicisVal.css" />
+  <link id="estilo-css" href="./bicisVal.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-estilo="bicisVal">
   <!--Cabecera-->
   <header id="header_taller">
     <div id="titulo_pagina">
@@ -23,10 +23,10 @@
   <nav id="nav_taller">
     <!--Enlaces Página-->
     <div id="enlaces_taller">
-      <a href="index.html" id="inicio"> Inicio </a>
-      <a href="venta.html" id="ventas">Ventas</a>
-      <a href="taller.html" id="reparaciones">Reparaciones</a>
-      <a href="alquiler.html" id="alquiler">Alquiler</a>
+      <a id="inicio" href="index.html"> Inicio </a>
+      <a id="ventas" href="venta.html">Ventas</a>
+      <a id="reparaciones" href="taller.html">Reparaciones</a>
+      <a id="alquiler" href="alquiler.html">Alquiler</a>
     </div>
     <!-- /Enlaces Pagina -->
   </nav>
@@ -66,16 +66,16 @@
     <section id="principal_taller">
       <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
+        <input id="nombre" name="nombre" type="text" required>
 
         <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required />
+        <input id="telefono" name="telefono" type="tel" required>
 
         <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo" required />
+        <input id="correo" name="correo" type="email" required>
 
         <label for="modelo">Modelo de Bicicleta:</label>
-        <input type="text" id="modelo" name="modelo" required />
+        <input id="modelo" name="modelo" type="text" required>
 
         <label for="descripcion">Descripción de la Reparación:</label>
         <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
@@ -98,32 +98,38 @@
     <div id="contacto">
       <div id="lema">
         <p class="textFooter">
-          BicisVal<br />"Pedalea hacia tu aventura con BicisVal: donde cada
+          BicisVal<br>"Pedalea hacia tu aventura con BicisVal: donde cada
           ruta es una historia, y cada bicicleta es tu compañera de viaje."
         </p>
       </div>
       <div id="siguenos">
         <p class="textFooter">Siguenos:</p>
         <button class="enlacesRRSS">
-          <img src="./imagenes/Background/icons8-instagram(1).svg" alt="Instagram" />
+          <img src="./imagenes/Background/icons8-instagram(1).svg" alt="Instagram">
         </button>
         <button class="enlacesRRSS">
-          <img src="./imagenes/Background/icons8-facebook(1).svg" alt="facebook" />
+          <img src="./imagenes/Background/icons8-facebook(1).svg" alt="facebook">
         </button>
         <button class="enlacesRRSS">
-          <img src="./imagenes/Background/icons8-twitterx(1).svg" alt="" />
+          <img src="./imagenes/Background/icons8-twitterx(1).svg" alt>
         </button>
+          <!-- Botones Tema color -->
+          <button class="enlacesRRSS" id="cambiar_Estilo" onclick="cambiarEstilo()">
+            <img src="./imagenes/Background/dia-y-noche.png" alt="Modo">
+          </button>
+          <!-- /Botones Tema color-->
       </div>
     </div>
     <div id="datosContacto">
       <p class="textFooter" id="detalles_contacto">
         <span>
           @ 2023 BicisVal. Tienda Oficial, España. Todos los derechos
-          reservados <br />Calle Moto,10 - Cocentaina</span>
+          reservados <br>Calle Moto,10 - Cocentaina</span>
         <span id="telefono"> <em>Llamanos:</em> 699 888 777 </span>
       </p>
     </div>
   </footer>
   <!--/Pie-->
+  <script src="bicisVal.js"></script>
 </body>
 </html>

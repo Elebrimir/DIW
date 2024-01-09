@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML" />
-    <meta name="description" content="Ejercicio UD1" />
-    <meta name="author" content="Pablo Cortes Bravo" />
-    <link rel="stylesheet" href="bicisVal.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML">
+    <meta name="description" content="Ejercicio UD1">
+    <meta name="author" content="Pablo Cortes Bravo">
+    <link id="estilo-css" href="bicisVal.css" rel="stylesheet">
     <title>Ventas BicisVal</title>
   </head>
 
-  <body>
+  <body data-estilo="bicisVal">
     <div class="contenedorPrincipal">
       <!--Cabecera-->
       <header class="cabecera_ventas">
@@ -39,52 +39,52 @@
       <div class="contenido_ventas">
         <article class="elementos">
           <h3>Bruiser</h3>
-          <img src="./imagenes/RoadBike/IAbici1.jpeg" alt="Bruiser" />
+          <img src="./imagenes/RoadBike/IAbici1.jpeg" alt="Bruiser">
           <span>Precio: 3.399,00€</span>
         </article>
         <article class="elementos">
           <h3>Gladiator</h3>
-          <img src="./imagenes/RoadBike/IAbici2.jpeg" alt="Gladiator" />
+          <img src="./imagenes/RoadBike/IAbici2.jpeg" alt="Gladiator">
           <span>Precio: 4.399,00€</span>
         </article>
         <article class="elementos">
           <h3>Promise</h3>
-          <img src="./imagenes/RoadBike/IAbici3.jpeg" alt="Promise" />
+          <img src="./imagenes/RoadBike/IAbici3.jpeg" alt="Promise">
           <span>Precio: 2.999,00€</span>
         </article>
         <article class="elementos">
           <h3>Curiosity</h3>
-          <img src="./imagenes/RoadBike/IAbici4.jpeg" alt="Curiosity" />
+          <img src="./imagenes/RoadBike/IAbici4.jpeg" alt="Curiosity">
           <span>Precio: 6.999,00€</span>
         </article>
         <article class="elementos">
           <h3>Black Panther</h3>
-          <img src="./imagenes/RoadBike/IAbici5.jpeg" alt="Black Panther" />
+          <img src="./imagenes/RoadBike/IAbici5.jpeg" alt="Black Panther">
           <span>Precio: 5.798,99€</span>
         </article>
         <article class="elementos">
           <h3>Evolution</h3>
-          <img src="./imagenes/RoadBike/IAbici6.jpeg" alt="Evolution" />
+          <img src="./imagenes/RoadBike/IAbici6.jpeg" alt="Evolution">
           <span>Precio: 3.399,00€</span>
         </article>
         <article class="elementos">
           <h3>Discoverer</h3>
-          <img src="./imagenes/RoadBike/IAbici7.jpeg" alt="Discoverer" />
+          <img src="./imagenes/RoadBike/IAbici7.jpeg" alt="Discoverer">
           <span>Precio: 2.599,00€</span>
         </article>
         <article class="elementos">
           <h3>Courage</h3>
-          <img src="./imagenes/RoadBike/IAbici8.jpeg" alt="Courage" />
-          <span>Precio: 3959,12€<br /><del>4.499,00€</del></span>
+          <img src="./imagenes/RoadBike/IAbici8.jpeg" alt="Courage">
+          <span>Precio: 3959,12€<br><del>4.499,00€</del></span>
         </article>
         <article class="elementos">
           <h3>Bull</h3>
-          <img src="./imagenes/RoadBike/IAbici9.jpeg" alt="Bull" />
-          <span>Precio: 3959,12€<br /><del>4.499,00€</del></span>
+          <img src="./imagenes/RoadBike/IAbici9.jpeg" alt="Bull">
+          <span>Precio: 3959,12€<br><del>4.499,00€</del></span>
         </article>
         <article class="elementos">
           <h3>Perceiver</h3>
-          <img src="./imagenes/RoadBike/IAbici10.jpeg" alt="Perceiver" />
+          <img src="./imagenes/RoadBike/IAbici10.jpeg" alt="Perceiver">
           <span>Precio: 3698,99€</span>
         </article>
       </div>
@@ -95,39 +95,38 @@
       <div id="contacto">
         <div id="lema">
           <p class="textFooter">
-            BicisVal<br />"Pedalea hacia tu aventura con BicisVal: donde cada
+            BicisVal<br>"Pedalea hacia tu aventura con BicisVal: donde cada
             ruta es una historia, y cada bicicleta es tu compañera de viaje."
           </p>
         </div>
         <div id="siguenos">
           <p class="textFooter">Siguenos:</p>
           <button class="enlacesRRSS">
-            <img
-              src="./imagenes/Background/icons8-instagram(1).svg"
-              alt="Instagram"
-            />
+            <img src="./imagenes/Background/icons8-instagram(1).svg" alt="Instagram">
           </button>
           <button class="enlacesRRSS">
-            <img
-              src="./imagenes/Background/icons8-facebook(1).svg"
-              alt="facebook"
-            />
+            <img src="./imagenes/Background/icons8-facebook(1).svg" alt="facebook">
           </button>
           <button class="enlacesRRSS">
-            <img src="./imagenes/Background/icons8-twitterx(1).svg" alt="" />
+            <img src="./imagenes/Background/icons8-twitterx(1).svg" alt>
           </button>
+          <!-- Botones Tema color -->
+          <button class="enlacesRRSS" id="cambiar_Estilo" onclick="cambiarEstilo()">
+            <img src="./imagenes/Background/dia-y-noche.png" alt="Modo">
+          </button>
+          <!-- /Botones Tema color-->
         </div>
       </div>
       <div id="datosContacto">
         <p class="textFooter" id="detalles_contacto">
           <span>
             @ 2023 BicisVal. Tienda Oficial, España. Todos los derechos
-            reservados <br />Calle Moto,10 - Cocentaina</span
-          >
+            reservados <br>Calle Moto,10 - Cocentaina</span>
           <span id="telefono"> <em>Llamanos:</em> 699 888 777 </span>
         </p>
       </div>
     </footer>
     <!--/Pie-->
+    <script src="bicisVal.js"></script>
   </body>
 </html>
