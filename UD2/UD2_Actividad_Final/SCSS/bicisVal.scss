@@ -1,0 +1,327 @@
+@import 'footer.scss';
+@import 'header_index.scss';
+@import 'header_ventas.scss';
+@import 'header_taller.scss';
+@import 'header_alquiler.scss';
+@import 'navbar_index.scss';
+@import 'navbar_ventas.scss';
+@import 'navbar_taller.scss';
+@import 'navbar_alquiler.scss';
+@import './_myMixing';
+
+/*Definimos las variables para los colores*/
+$primary_1: #f5f5f5;
+$primary_2: #ffebd7;
+$primary_3: #808080;
+$primary_4: #333333;
+$primary_5: #8b0000;
+$secondary_1: #fc0000;
+$secondary_2: #a42a2a;
+
+/*Variables para las letras*/
+$Font_Primary: Georgia, 'Times New Roman', Times, serif;
+$Font_Footer: Verdana, Geneva, Tahoma, sans-serif;
+
+/*Index CSS----------------------------------------------------------------------------- */
+
+body {
+  max-width: 1280px;
+  font-family: $Font_Primary;
+  color: $primary_4;
+  margin: auto;
+  padding: 0;
+  background-color: $primary_1;
+}
+
+button:hover {
+  background-color: $secondary_1;
+  cursor: pointer;
+}
+
+/* Separador Header <-> Principal*/
+
+#contenedor {
+  margin: 0;
+}
+
+.separador {
+  height: 200px;
+  background-color: $primary_1;
+
+  h1 {
+    @include title-Text($Font_Primary, $primary_5);
+  }
+}
+
+/* Sección Principal */
+
+#contenido {
+  margin: 0;
+  background-color: $primary_1;
+  border: none;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+#principal {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  margin: 0;
+  max-width: inherit;
+}
+
+.objetos {
+  background-color: $primary_1;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.titulObjetos {
+  font-size: 1rem;
+  color: $secondary_2;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  padding: 5%;
+}
+
+.imagObjetos {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  box-shadow: -10px 10px 8px 4px $primary_4;
+}
+
+/* Distribución columnas según ancho */
+
+@media (max-width: 1150px) {
+  #principal {
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  .contenido_ventas {
+    grid-template-columns: auto auto;
+  }
+
+  .contenido_Alquiler {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 980px) {
+  #principal {
+    grid-template-columns: auto;
+  }
+
+  .contenido_ventas {
+    grid-template-columns: auto;
+  }
+
+  .contenido_Alquiler {
+    grid-template-columns: auto;
+  }
+}
+
+/*------------------ Estilo Ventas ----------------------------------------*/
+
+.contenedorPrincipal {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'menu main main main'
+    'footer footer footer footer';
+  gap: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.contenido_ventas {
+  background-color: $primary_1;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding: 2rem;
+  margin: 0;
+}
+
+.elementos {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  border: 2px solid $primary_2;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: -8px 8px 4px 2px $primary_4;
+  background-color: $primary_1;
+
+  h3 {
+    margin: 3px;
+    padding: 1rem;
+    text-align: center;
+    color: $primary_4;
+  }
+
+  img {
+    margin: auto;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10%;
+    border: none;
+    padding: 0;
+  }
+
+  span {
+    margin: 5px;
+    padding: 1rem;
+    text-align: center;
+    color: $primary_3;
+  }
+}
+
+/*------------------- Estilo Taller -------------------- -----------------------*/
+
+#contenido_taller {
+  margin: auto;
+}
+
+#presentacion {
+  margin: 8%;
+  h1 {
+    color: $primary_5;
+  }
+}
+
+form {
+  margin: auto;
+  margin-bottom: 10%;
+  background-color: $primary_1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: $primary_4;
+}
+
+input,
+select {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid $primary_2;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: $secondary_2;
+}
+
+textarea {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid $primary_2;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  font-family: $Font_Primary;
+  color: $primary_5;
+  align-self: center;
+  text-align: center;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: $secondary_2;
+}
+
+#button_taller {
+  background-color: $secondary_2;
+  color: $primary_1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#button_taller:hover {
+  background-color: $secondary_2;
+}
+
+/* ------------------------- Estilo Alquiler ----------------------------------------------------*/
+
+#presentacion_Alquiler {
+  background-color: $primary_1;
+  padding: 5%;
+  h1 {
+    color: $primary_5;
+  }
+}
+
+.contenido_Alquiler {
+  background-color: $primary_1;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding: 2rem;
+  margin: 0;
+}
+
+.elementos_Alquiler {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px $primary_4;
+  background-color: $primary_1;
+
+  h3 {
+    margin: 3px;
+    padding: 1rem;
+    text-align: center;
+    color: $primary_4;
+  }
+  img {
+    margin: auto;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10%;
+    border: none;
+    padding: 0;
+  }
+  span {
+    margin: 5px;
+    padding: 1rem;
+    text-align: center;
+    color: $primary_3;
+  }
+}

@@ -1,0 +1,49 @@
+@mixin title-Text($font, $color) {
+  font-family: $font;
+  color: $color;
+  align-self: center;
+  text-align: center;
+}
+
+@mixin headerDiv($font, $color, $backColor) {
+  text-align: center;
+  font-family: $font;
+  font-size: 4vw;
+  color: $color;
+  background-color: $backColor;
+  opacity: 0.75;
+
+  h1 {
+    margin: auto;
+  }
+}
+
+@mixin headerImg($color, $url) {
+  background: {
+    image: url($url);
+    position: center;
+    repeat: no-repeat;
+    color: $color;
+    blend-mode: normal;
+  }
+}
+
+@mixin headerProperty() {
+  height: 30vw;
+  grid-area: header;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin navProperty($backColor) {
+  width: 100%;
+  max-width: inherit;
+  overflow: hidden;
+  display: flex;
+  background-color: $backColor;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+}

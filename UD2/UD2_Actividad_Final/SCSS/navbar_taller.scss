@@ -1,0 +1,50 @@
+@import '_myMixing';
+
+$primary_1: #f5f5f5;
+$primary_2: #ffebd7;
+$primary_3: #808080;
+$primary_4: #333333;
+$primary_5: #8b0000;
+$secondary_1: #fc0000;
+$secondary_2: #a42a2a;
+
+$Font_Primary: Georgia, 'Times New Roman', Times, serif;
+$Font_Footer: Verdana, Geneva, Tahoma, sans-serif;
+
+/* ---------------------------- Navbar taller --------------------------------------*/
+
+#nav_taller {
+  @include navProperty($primary_5);
+}
+
+#enlaces_taller {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  position: relative;
+  margin: auto;
+  padding: 0;
+
+  a {
+    width: 150px;
+    height: 40px;
+    float: left;
+    padding-top: 25px;
+    background-color: $primary_3;
+    border: none;
+    margin: auto;
+    margin-right: 20px;
+    box-shadow: -8px 8px 4px 2px $primary_4;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: $primary_1;
+  }
+
+  a:hover {
+    background-color: $primary_1;
+    cursor: pointer;
+    scale: 1.2;
+    color: $primary_4;
+  }
+}
