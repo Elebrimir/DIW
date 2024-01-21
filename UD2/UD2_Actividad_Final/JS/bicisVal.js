@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (estiloCookie) {
     var cuerpo = document.body
     var enlaceCSS = document.getElementById('estilo-css')
-    enlaceCSS.href = estiloCookie + '.css'
+    enlaceCSS.href = './CSS/' + estiloCookie + '.css'
     cuerpo.setAttribute('data-estilo', estiloCookie)
   }
 })
@@ -21,14 +21,14 @@ function cambiarEstilo() {
 
   // Cambiar la referencia al archivo CSS
   if (cuerpo.getAttribute('data-estilo') === 'bicisVal') {
-    enlaceCSS.href = './bicisVal_DarkMode.css'
+    enlaceCSS.href = './CSS/bicisVal_DarkMode.css'
     cuerpo.setAttribute('data-estilo', 'bicisVal_DarkMode')
     // Guardar la elección en una cookie con un tiempo de expiración de 1 día
     document.cookie =
       'estilo=bicisVal_DarkMode; expires=' +
       new Date(Date.now() + 86400000).toUTCString()
   } else {
-    enlaceCSS.href = './bicisVal.css'
+    enlaceCSS.href = './CSS/bicisVal.css'
     cuerpo.setAttribute('data-estilo', 'bicisVal')
     document.cookie =
       'estilo=bicisVal; expires=' +

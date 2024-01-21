@@ -1,0 +1,658 @@
+@charset "UTF-8";
+/*Footer todas las pàginas*/
+footer {
+  margin: 0;
+  background-color: #8b0000;
+  display: grid;
+}
+
+.textFooter {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #f5f5f5;
+}
+
+#lema {
+  max-width: 50%;
+  float: left;
+  margin-left: 50px;
+}
+
+#siguenos {
+  max-width: 50%;
+  float: right;
+  margin-right: 50px;
+}
+
+#siguenos p {
+  text-align: center;
+}
+
+.enlacesRRSS {
+  background-color: transparent;
+  border: none;
+}
+
+.enlacesRRSS:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+#datosContacto {
+  margin-top: 20px;
+}
+
+#detalles_contacto {
+  padding: 5px;
+  border-top: 2px solid #f5f5f5;
+  color: #f5f5f5;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* -------------------------------- Header Index ------------------------------------ */
+header {
+  background-image: url(../imagenes/Background/IAFondo.jpeg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #ffebd7;
+  background-blend-mode: darken;
+  margin: auto;
+  padding: 0;
+}
+header div img {
+  margin: 5%;
+  margin-top: 10%;
+  margin-left: 75%;
+  width: 15vw;
+  height: auto;
+  padding: 0;
+  border: none;
+  box-shadow: -10px 10px 5px 2px #333333;
+  border-radius: 25px;
+}
+header .buttom a {
+  margin: auto;
+}
+
+/* ------------------------------ Header Ventas -------------------------------*/
+.cabecera_ventas {
+  height: 30vw;
+  grid-area: header;
+  margin: 0;
+  padding: 0;
+  background-image: url("../imagenes/IAVentas.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #808080;
+  background-blend-mode: normal;
+}
+.cabecera_ventas div {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4vw;
+  color: #ffebd7;
+  background-color: #333333;
+  opacity: 0.75;
+}
+.cabecera_ventas div h1 {
+  margin: auto;
+}
+
+/* -------------------------- Header Taller -------------------------*/
+#header_taller {
+  height: 30vw;
+  grid-area: header;
+  margin: 0;
+  padding: 0;
+  background-image: url("../imagenes/IAReparaciones.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #808080;
+  background-blend-mode: normal;
+}
+
+#titulo_pagina {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4vw;
+  color: #ffebd7;
+  background-color: #333333;
+  opacity: 0.75;
+}
+#titulo_pagina h1 {
+  margin: auto;
+}
+
+/*---------------Header Alquiler-------------------------------------------*/
+.cabecera_alquiler {
+  height: 30vw;
+  grid-area: header;
+  margin: 0;
+  padding: 0;
+  background-image: url("../imagenes/IAAlquiler.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #808080;
+  background-blend-mode: normal;
+}
+.cabecera_alquiler div {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4vw;
+  color: #ffebd7;
+  background-color: #333333;
+  opacity: 0.75;
+}
+.cabecera_alquiler div h1 {
+  margin: auto;
+}
+
+/*----------------------------------- Navbar Index ---------------------------*/
+#nav_Principal {
+  width: 100%;
+  max-width: inherit;
+  overflow: hidden;
+  display: flex;
+  background-color: #8b0000;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+  position: fixed;
+}
+
+/* Botones idiomas  */
+#idiomas {
+  display: flex;
+  padding: 0;
+  width: max-content;
+  height: 50px;
+  float: left;
+  margin: auto;
+  margin-right: 2vw;
+}
+#idiomas button {
+  margin: 1%;
+  background-color: #8b0000;
+  border: none;
+  border-radius: 5px;
+}
+#idiomas button:hover {
+  background-color: #fc0000;
+  cursor: pointer;
+}
+
+/*Enlaces Paginas*/
+#enlaces {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 0;
+}
+#enlaces button {
+  float: left;
+  padding: 1%;
+  background-color: #808080;
+  border: none;
+  margin: 7px;
+  box-shadow: -4px 4px 2px 1px #333333;
+  border-radius: 6px;
+}
+#enlaces .button:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  scale: 1.2;
+}
+#enlaces .button:hover .link {
+  color: #333333;
+}
+#enlaces #buttonActive {
+  background-color: #f5f5f5;
+}
+#enlaces .link {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+#enlaces #linksActive {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #333333;
+  text-decoration: none;
+}
+
+/* -------------------------------------- Navbar Ventas -----------------------------*/
+.menuNavegacion {
+  grid-area: menu;
+  background-color: #8b0000;
+}
+
+#menu_principal {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+#menu_principal a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  background-color: #808080;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 5px 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: -8px 8px 4px 2px #333333;
+}
+#menu_principal a:hover {
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+#enlaces_ventas {
+  background-color: #8b0000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+}
+
+/* ---------------------------- Navbar taller --------------------------------------*/
+#nav_taller {
+  width: 100%;
+  max-width: inherit;
+  overflow: hidden;
+  display: flex;
+  background-color: #8b0000;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+}
+
+#enlaces_taller {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  position: relative;
+  margin: auto;
+  padding: 0;
+}
+#enlaces_taller a {
+  width: 150px;
+  height: 40px;
+  float: left;
+  padding-top: 25px;
+  background-color: #808080;
+  border: none;
+  margin: auto;
+  margin-right: 20px;
+  box-shadow: -8px 8px 4px 2px #333333;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #f5f5f5;
+}
+#enlaces_taller a:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  scale: 1.2;
+  color: #333333;
+}
+
+/* ------------------------------Navbar Alquiler ----------------------------------------------*/
+#nav_Alquiler {
+  width: 100%;
+  max-width: inherit;
+  overflow: hidden;
+  display: flex;
+  background-color: #8b0000;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+}
+
+#menu_principal a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+#enlaces_Alquiler {
+  background-color: #8b0000;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#enlaces_Alquiler a {
+  width: 150px;
+  height: 40px;
+  float: left;
+  padding-top: 25px;
+  background-color: #808080;
+  border: none;
+  margin: auto;
+  margin-right: 20px;
+  box-shadow: -8px 8px 4px 2px #333333;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #f5f5f5;
+}
+#enlaces_Alquiler a:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  scale: 1.2;
+  color: #333333;
+}
+
+#enlaces_Alquiler:hover ul a {
+  color: #333333;
+}
+
+/*Definimos las variables para los colores*/
+/*Variables para las letras*/
+/*Index CSS----------------------------------------------------------------------------- */
+body {
+  max-width: 1280px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+  margin: auto;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+button:hover {
+  background-color: #fc0000;
+  cursor: pointer;
+}
+
+/* Separador Header <-> Principal*/
+#contenedor {
+  margin: 0;
+}
+
+.separador {
+  height: 200px;
+  background-color: #f5f5f5;
+}
+.separador h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #8b0000;
+  align-self: center;
+  text-align: center;
+}
+
+/* Sección Principal */
+#contenido {
+  margin: 0;
+  background-color: #f5f5f5;
+  border: none;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+#principal {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  margin: 0;
+  max-width: inherit;
+}
+
+.objetos {
+  background-color: #f5f5f5;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.titulObjetos {
+  font-size: 1rem;
+  color: #a42a2a;
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  padding: 5%;
+}
+
+.imagObjetos {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  box-shadow: -10px 10px 8px 4px #333333;
+}
+
+/* Distribución columnas según ancho */
+@media (max-width: 1150px) {
+  #principal {
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  .contenido_ventas {
+    grid-template-columns: auto auto;
+  }
+  .contenido_Alquiler {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 980px) {
+  #principal {
+    grid-template-columns: auto;
+  }
+  .contenido_ventas {
+    grid-template-columns: auto;
+  }
+  .contenido_Alquiler {
+    grid-template-columns: auto;
+  }
+}
+/*------------------ Estilo Ventas ----------------------------------------*/
+.contenedorPrincipal {
+  display: grid;
+  grid-template-areas: "header header header header" "menu main main main" "footer footer footer footer";
+  gap: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.contenido_ventas {
+  background-color: #f5f5f5;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding: 2rem;
+  margin: 0;
+}
+
+.elementos {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  border: 2px solid #ffebd7;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: -8px 8px 4px 2px #333333;
+  background-color: #f5f5f5;
+}
+.elementos h3 {
+  margin: 3px;
+  padding: 1rem;
+  text-align: center;
+  color: #333333;
+}
+.elementos img {
+  margin: auto;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10%;
+  border: none;
+  padding: 0;
+}
+.elementos span {
+  margin: 5px;
+  padding: 1rem;
+  text-align: center;
+  color: #808080;
+}
+
+/*------------------- Estilo Taller -------------------- -----------------------*/
+#contenido_taller {
+  margin: auto;
+}
+
+#presentacion {
+  margin: 8%;
+}
+#presentacion h1 {
+  color: #8b0000;
+}
+
+form {
+  margin: auto;
+  margin-bottom: 10%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+input,
+select {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ffebd7;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #a42a2a;
+}
+
+textarea {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ffebd7;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #8b0000;
+  align-self: center;
+  text-align: center;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: #a42a2a;
+}
+
+#button_taller {
+  background-color: #a42a2a;
+  color: #f5f5f5;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#button_taller:hover {
+  background-color: #a42a2a;
+}
+
+/* ------------------------- Estilo Alquiler ----------------------------------------------------*/
+#presentacion_Alquiler {
+  background-color: #f5f5f5;
+  padding: 5%;
+}
+#presentacion_Alquiler h1 {
+  color: #8b0000;
+}
+
+.contenido_Alquiler {
+  background-color: #f5f5f5;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding: 2rem;
+  margin: 0;
+}
+
+.elementos_Alquiler {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px #333333;
+  background-color: #f5f5f5;
+}
+.elementos_Alquiler h3 {
+  margin: 3px;
+  padding: 1rem;
+  text-align: center;
+  color: #333333;
+}
+.elementos_Alquiler img {
+  margin: auto;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10%;
+  border: none;
+  padding: 0;
+}
+.elementos_Alquiler span {
+  margin: 5px;
+  padding: 1rem;
+  text-align: center;
+  color: #808080;
+}
+
+/*# sourceMappingURL=bicisVal.css.map */

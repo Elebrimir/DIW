@@ -1,15 +1,15 @@
 body {
   max-width: 1280px;
   font-family: 'Times New Roman', Times, serif;
-  color: whitesmoke;
+  color: #333333;
   margin: auto;
   padding: 0;
-  background-color: #333333;
+  background-color: whitesmoke;
 }
 
 /* Header */
 header {
-  background-image: url(./imagenes/Background/IAFondo.jpeg);
+  background-image: url(../imagenes/Background/IAFondo.jpeg);
   background-position: left;
   background-repeat: no-repeat;
   background-color: antiquewhite;
@@ -42,7 +42,7 @@ header div img {
   overflow: hidden;
   position: fixed;
   display: flex;
-  background-color: #2980b9;
+  background-color: darkred;
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -64,13 +64,13 @@ header div img {
 
 #idiomas button {
   margin: 1%;
-  background-color: #2980b9;
+  background-color: darkred;
   border: none;
   border-radius: 5px;
 }
 
 #idiomas button:hover {
-  background-color: #3498db;
+  background-color: red;
   cursor: pointer;
 }
 
@@ -128,17 +128,17 @@ header div img {
 
 .separador {
   height: 200px;
-  background-color: #333333;
+  background-color: whitesmoke;
 }
 
 .separador h1 {
   font-family: 'Times New Roman', Times, serif;
-  color: #2980b9;
+  color: darkred;
   align-self: center;
   text-align: center;
   padding: 5%;
   margin: 0;
-  border-bottom: 5px solid whitesmoke;
+  border-bottom: 5px solid #333333;
 }
 
 #contenedor {
@@ -149,7 +149,7 @@ header div img {
 
 #contenido {
   margin: 0;
-  background-color: #333333;
+  background-color: whitesmoke;
   border: none;
   text-align: center;
 }
@@ -170,7 +170,7 @@ header div img {
 }
 
 .objetos {
-  background-color: #333333;
+  background-color: whitesmoke;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -180,7 +180,7 @@ header div img {
 
 .titulObjetos {
   font-size: 1rem;
-  color: #3498db;
+  color: brown;
   font-weight: bold;
   text-align: center;
   float: left;
@@ -191,7 +191,7 @@ header div img {
   max-width: 100%;
   height: auto;
   margin: auto;
-  box-shadow: -10px 10px 8px 4px whitesmoke;
+  box-shadow: -10px 10px 8px 4px #333333;
 }
 
 /* Distribución columnas según ancho */
@@ -225,7 +225,7 @@ header div img {
 
 footer {
   margin: 0;
-  background-color: #2980b9;
+  background-color: darkred;
   display: grid;
 }
 
@@ -282,16 +282,16 @@ footer {
   grid-area: header;
   margin: 0;
   padding: 0;
-  background-image: url(./imagenes/IAVentas.jpeg);
+  background-image: url(../imagenes/IAVentas.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: antiquewhite;
+  background-color: darkgrey;
   background-blend-mode: normal;
 }
 
 .menuNavegacion {
   grid-area: menu;
-  background-color: #2980b9;
+  background-color: darkred;
 }
 .contenido {
   grid-area: main;
@@ -328,7 +328,7 @@ footer {
 }
 
 #enlaces_ventas {
-  background-color: #2980b9;
+  background-color: darkred;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin: auto;
@@ -349,8 +349,8 @@ footer {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 4vw;
-  color: #3498db;
-  background-color: antiquewhite;
+  color: antiquewhite;
+  background-color: #333333;
   opacity: 0.75;
 }
 
@@ -359,7 +359,7 @@ footer {
 }
 
 .contenido_ventas {
-  background-color: #333333;
+  background-color: whitesmoke;
   font-size: 1.5rem;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -373,18 +373,18 @@ footer {
   display: grid;
   grid-template-rows: auto auto auto;
   row-gap: 20px;
-  border: 2px solid #3498db;
+  border: 2px solid antiquewhite;
   border-radius: 15px;
   padding: 1rem;
-  box-shadow: -8px 8px 4px 2px whitesmoke;
-  background-color: #333333;
+  box-shadow: -8px 8px 4px 2px #333;
+  background-color: whitesmoke;
 }
 
 .elementos h3 {
   margin: 3px;
   padding: 1rem;
   text-align: center;
-  color: whitesmoke;
+  color: #333333;
 }
 
 .elementos img {
@@ -400,14 +400,14 @@ footer {
   margin: 5px;
   padding: 1rem;
   text-align: center;
-  color: #3498db;
+  color: darkslategray;
 }
 
 /*------------------- Estilo Taller -----------------------*/
 
 #header_taller {
-  background-color: antiquewhite;
-  background-image: url(./imagenes/IAReparaciones.jpeg);
+  background-color: darkgrey;
+  background-image: url(../imagenes/IAReparaciones.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   height: 33vw;
@@ -418,8 +418,8 @@ footer {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 4vw;
-  color: #3498db;
-  background-color: antiquewhite;
+  color: antiquewhite;
+  background-color: #333333;
   opacity: 0.75;
 }
 
@@ -432,7 +432,7 @@ footer {
   max-width: inherit;
   overflow: hidden;
   display: flex;
-  background-color: #2980b9;
+  background-color: darkred;
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -458,7 +458,7 @@ footer {
   border: none;
   margin: auto;
   margin-right: 20px;
-  box-shadow: -8px 8px 4px 2px #333333;
+  box-shadow: -8px 8px 4px 2px #333;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -481,7 +481,7 @@ footer {
 }
 
 #presentacion h1 {
-  color: #2980b9;
+  color: darkred;
 }
 
 form {
@@ -490,14 +490,14 @@ form {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   max-width: 400px;
   width: 100%;
 }
 
 form:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -556,10 +556,10 @@ textarea:focus {
   grid-area: header;
   margin: 0;
   padding: 0;
-  background-image: url(./imagenes/IAAlquiler.jpeg);
+  background-image: url(../imagenes/IAAlquiler.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: antiquewhite;
+  background-color: darkgrey;
   background-blend-mode: normal;
 }
 
@@ -568,7 +568,7 @@ textarea:focus {
   max-width: inherit;
   overflow: hidden;
   display: flex;
-  background-color: #2980b9;
+  background-color: darkred;
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -605,15 +605,15 @@ textarea:focus {
   background-color: whitesmoke;
   cursor: pointer;
   scale: 1.2;
-  color: #333333;
+  color: #333;
 }
 
 .cabecera_alquiler div {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 4vw;
-  color: #3498db;
-  background-color: antiquewhite;
+  color: antiquewhite;
+  background-color: #333333;
   opacity: 0.75;
 }
 
@@ -622,7 +622,7 @@ textarea:focus {
 }
 
 #enlaces_Alquiler {
-  background-color: #2980b9;
+  background-color: darkred;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin: auto;
@@ -630,7 +630,7 @@ textarea:focus {
 
 #menu_principal a {
   text-decoration: none;
-  color: #333333;
+  color: whitesmoke;
 }
 
 #enlaces_Alquiler:hover ul a {
@@ -638,7 +638,7 @@ textarea:focus {
 }
 
 .contenido_Alquiler {
-  background-color: #333333;
+  background-color: whitesmoke;
   font-size: 1.5rem;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -649,7 +649,7 @@ textarea:focus {
 }
 
 #presentacion_Alquiler {
-  background-color: #333333;
+  background-color: whitesmoke;
   padding: 5%;
 }
 
@@ -657,18 +657,18 @@ textarea:focus {
   display: grid;
   grid-template-rows: auto auto auto;
   row-gap: 20px;
-  border: 2px solid #3498db;
+  border: none;
   border-radius: 15px;
   padding: 1rem;
-  box-shadow: 10px 10px 5px whitesmoke;
-  background-color: #333333;
+  box-shadow: 10px 10px 5px #333333;
+  background-color: whitesmoke;
 }
 
 .elementos_Alquiler h3 {
   margin: 3px;
   padding: 1rem;
   text-align: center;
-  color: whitesmoke;
+  color: #333333;
 }
 
 .elementos_Alquiler img {
@@ -684,9 +684,9 @@ textarea:focus {
   margin: 5px;
   padding: 1rem;
   text-align: center;
-  color: #3498db;
+  color: darkslategray;
 }
 
 #presentacion_Alquiler h1 {
-  color: #2980b9;
+  color: darkred;
 }
