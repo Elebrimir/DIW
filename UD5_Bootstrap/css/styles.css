@@ -1,0 +1,17 @@
+
+.bg-custom-secondary{
+    background-color: antiquewhite;
+}
+
+.img-custom-fluid {
+    width: auto;
+    max-height: 45vw;
+}
+
+.blend-mode-darken {
+    mix-blend-mode: darken;
+}
+
+.custom-shadow {
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.8);
+  }
